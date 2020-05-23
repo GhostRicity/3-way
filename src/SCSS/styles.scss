@@ -1,0 +1,36 @@
+
+body {
+  align-content: center;
+}
+
+
+
+//naviugation for the pages!
+
+.verText {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-size: 2rem;
+  position: absolute;
+  left: 3%;
+  top: 30%;
+}
+
+.verTextR {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-size: 2rem;
+  position: absolute;
+  right: 3%;
+  top: 30%;
+}
+
+.verTextB {
+//  writing-mode: vertical-lr;
+//  text-orientation: upright;
+  font-size: 2rem;
+  position: absolute;
+
+  top: 97%;
+  text-align: center;
+}

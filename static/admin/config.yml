@@ -1,0 +1,22 @@
+
+backend:
+  name: github
+  repo: GhostRicity/3-way
+  branch: master
+  use_graphql: true
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - label: Portfolio
+    name: portfolio
+    folder: portfolio
+    create: true
+    fields:
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
+      - { name: thumbnail, label: thumbnail, widget: image }
+      - { name: description, label: Description }
+      - { name: tags, label: tags, widget: string }
+      - { name: body, label: Body, widget: markdown }
