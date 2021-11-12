@@ -18,7 +18,7 @@ import Col from 'react-bootstrap/Col'
 const AboutPage = () => (
   <Layout>
     <SEO  title="About Eddy"/>
-    <Container fluid className="cont">
+    <Container  className="cont">
       <Row className="centerText">
         <Col className="spacing">
             <AniLink className="verTextUp" swipe direction="down" to="/">
@@ -41,13 +41,12 @@ const AboutPage = () => (
       </Row>
       <Row className="spacing">
         <Col sm>
-          <h2 className="neon centerText">Curriculum vitae</h2>>
+          <h2 className="neon centerText">Curriculum vitae</h2>
         </Col>
       </Row>
       <Row>
       <Col sm>
         <h2 className="neon centerText">contacts</h2>
-        <p className="spacing">My CV will go hear!</p>
       </Col>
       </Row>
     </Container>
