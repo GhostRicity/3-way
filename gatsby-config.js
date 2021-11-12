@@ -15,14 +15,14 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `/${__dirname}/static/img`,
+        path: `${__dirname}/static/img`,
         name: `img`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `/${__dirname}/content/posts`,
+        path: `${__dirname}/content/posts`,
         name: `posts`,
       },
     },
