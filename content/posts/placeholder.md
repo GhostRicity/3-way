@@ -1,11 +1,7 @@
 ---
-date: 2020-05-12T14:16:29.132Z
-title: ThumbTest
+date: 2020-05-12
+title: gaming-esports
 thumbnail: /img/firefox_wallpaper.png
 description: Testing
-tags: [neon]
+url: https://www.youtube.com/
 ---
-
-Neon pinkis my favorite
-
-![neon](/img/firefox_wallpaper.png "neon VHS")

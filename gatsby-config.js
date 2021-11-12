@@ -8,12 +8,17 @@ var netlifyCmsPaths = {
 module.exports = {
   siteMetadata: {
     title: `Eddy The Dev`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Portfolio website`,
+    author: `Eduards Birznies`,
   },
   plugins: [
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `/${__dirname}/static/img`,
+        name: `img`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -24,14 +29,17 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `/${__dirname}/static/img`,
-        name: `img`,
+        name: `images`,
+        path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-remark-relative-images`,
           netlifyCmsPaths,
           {
             resolve: `gatsby-remark-images`,
@@ -43,8 +51,6 @@ module.exports = {
               wrapperStyle: `margin: 7vw 0;`,
             },
           },
-    `gatsby-remark-relative-images`,
-     netlifyCmsPaths,
         ],
       },
     },
@@ -52,6 +58,7 @@ module.exports = {
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-netlify`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
